@@ -1,0 +1,301 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:#fff;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.9);
+z-index:1000;
+backdrop-filter:blur(8px);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO - FIXED (NO HALF IMAGE ISSUE) */
+.hero{
+min-height:100vh;
+width:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:120px 20px 80px;
+box-sizing:border-box;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("images/hero-bridal.jpg");
+
+background-size:cover;
+background-position:center top;
+background-repeat:no-repeat;
+}
+
+/* HERO TEXT */
+.hero{
+min-height:100vh;
+width:100%;
+position:relative;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:140px 20px 80px;
+box-sizing:border-box;
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("images/hero-bridal.jpg");
+
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center 30%;
+
+overflow:hidden;
+}
+
+/* DARK OVERLAY FOR BETTER TEXT VISIBILITY */
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.25);
+z-index:1;
+}
+
+/* TEXT ABOVE IMAGE */
+.hero > div{
+position:relative;
+z-index:2;
+}
+
+/* HEADING */
+.hero h1{
+font-size:3.5rem;
+font-family:'Playfair Display';
+color:#D4AF37;
+text-shadow:2px 2px 12px rgba(0,0,0,0.8);
+margin-bottom:15px;
+}
+
+/* PARAGRAPH */
+.hero p{
+font-size:1.2rem;
+color:#F8E7C1;
+max-width:700px;
+margin:0 auto 20px;
+line-height:1.6;
+text-shadow:1px 1px 10px rgba(0,0,0,0.7);
+}
+
+/* IMPORTANT FIX (THIS SOLVES HALF FACE ISSUE) */
+background-position: center 30%;
+
+overflow:hidden;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+background:#c2185b;
+color:#fff;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#a0144a;
+}
+
+/* SECTIONS */
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+color:#d4af37;
+margin-bottom:40px;
+font-family:'Playfair Display';
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* PRICE */
+.price{
+color:#c2185b;
+font-weight:600;
+margin-top:10px;
+}
+
+/* PACKAGE */
+.package{
+background:#1a1a1a;
+padding:20px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.package:hover{
+transform:translateY(-8px);
+}
+
+.highlight{
+border:2px solid #c2185b;
+transform:scale(1.05);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact-box{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
+input,button{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+button{
+background:#c2185b;
+color:#fff;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#a0144a;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:black;
+margin-top:50px;
+}
+.btn{
+display:inline-block;
+background:#c2185b;
+color:#fff;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
+letter-spacing:0.5px;
+transition:0.3s;
+border:2px solid transparent;
+}
+
+.btn:hover{
+background:transparent;
+border:2px solid #d4af37;
+color:#d4af37;
+transform:translateY(-3px);
+}
+#msg{
+margin-top:10px;
+font-size:14px;
+font-weight:500;
+}
+.logo{
+font-family:'Playfair Display';
+font-size:30px;
+font-weight:800;
+background:linear-gradient(90deg,#d4af37,#f5e6a6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+letter-spacing:3px;
+}

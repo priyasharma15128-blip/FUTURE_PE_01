@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow & Grace Beauty Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">Glow & Grace</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#bridal">Bridal</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO (HOME PAGE MAIN) -->
+<header class="hero" id="home">
+<div>
+<h1>Glow Like Never Before</h1>
+<p>Luxury bridal, skincare & beauty salon for your perfect transformation.</p>
+<a href="#services" class="btn">Explore Services</a>
+</div>
+</header>
+
+<!-- HOMEPAGE SECTION (ABOUT / INTRO) -->
+<section id="about">
+<h2 class="title">Welcome to Glow & Grace</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Premium Quality</h3>
+<p>We use high-end beauty products for safe glowing results.</p>
+</div>
+
+<div class="card">
+<h3>Expert Artists</h3>
+<p>Professional bridal & makeup experts for every occasion.</p>
+</div>
+
+<div class="card">
+<h3>Luxury Experience</h3>
+<p>Relaxing salon environment with premium service.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES (ALL JPG ADDED) -->
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/haircare.jpg">
+<h3>Hair Care</h3>
+<p>Haircut, Spa & Styling</p>
+<div class="price">₹300 - ₹1200</div>
+</div>
+
+<div class="card">
+<img src="images/skincare.jpg">
+<h3>Skin Care</h3>
+<p>Facial, Cleanup & Glow Treatments</p>
+<div class="price">₹800 - ₹2500</div>
+</div>
+
+<div class="card">
+<img src="images/manicure.jpg">
+<h3>Manicure & Pedicure</h3>
+<p>Hand & Foot Spa Care</p>
+<div class="price">₹600 - ₹1800</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- OFFERS -->
+<section id="offers">
+
+<h2 class="title">Special Offers</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>New Customer Offer</h3>
+<p>Get 20% discount on your first visit for any service.</p>
+<div class="price">Limited Time</div>
+</div>
+
+<div class="card">
+<h3>Bridal Combo Offer</h3>
+<p>Book bridal makeup with hair styling and save ₹2000.</p>
+<div class="price">Best Value</div>
+</div>
+
+<div class="card">
+<h3>Festival Offer</h3>
+<p>Flat 15% discount on skincare and hair treatments during festivals.</p>
+<div class="price">Seasonal</div>
+</div>
+
+<div class="card">
+<h3>Referral Offer</h3>
+<p>Refer a friend and get ₹500 discount on your next service.</p>
+<div class="price">Reward Program</div>
+</div>
+
+</div>
+</section>
+<!-- PACKAGES -->
+<section id="packages">
+
+<h2 class="title">Bridal Packages</h2>
+
+<div class="grid">
+
+<div class="package">
+<h3>Silver Package</h3>
+<p class="price">₹9,999</p>
+<p>Basic bridal makeup + hairstyle + draping</p>
+</div>
+
+<div class="package highlight">
+<h3>Gold Package</h3>
+<p class="price">₹14,999</p>
+<p>HD makeup + premium hairstyle + jewellery setting</p>
+</div>
+
+<div class="package">
+<h3>Royal Package</h3>
+<p class="price">₹24,999</p>
+<p>Luxury airbrush makeup + full bridal makeover</p>
+</div>
+
+</div>
+</section>
+<!-- BRIDAL -->
+<section id="bridal" class="dark">
+<h2 class="title">Bridal Looks</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/bridal1.jpg">
+<h3>Engagement</h3>
+</div>
+
+<div class="card">
+<img src="images/bridal2.jpg">
+<h3>Haldi</h3>
+</div>
+
+<div class="card">
+<img src="images/bridal3.jpg">
+<h3>Sangeet</h3>
+</div>
+
+<div class="card">
+<img src="images/bridal4.jpg">
+<h3>Reception</h3>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/bridal1.jpg">
+<img src="images/bridal2.jpg">
+<img src="images/bridal3.jpg">
+<img src="images/bridal4.jpg">
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title">Book Appointment</h2>
+
+<div class="contact-box">
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="text" id="service" placeholder="Service Required">
+
+<button onclick="bookNow()">Book Now</button>
+
+<p id="msg"></p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Glow & Grace Beauty Salon</p>
+<p>Hair • Skin • Bridal • Makeup</p>
+<p>📞 +91 XXXXX XXXXX</p>
+</footer>
+<script>
+function bookNow(){
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let service = document.getElementById("service").value;
+
+if(name === "" || phone === "" || service === ""){
+document.getElementById("msg").innerText = "Please fill all details";
+document.getElementById("msg").style.color = "red";
+return;
+}
+
+document.getElementById("msg").innerText =
+"Booking confirmed! We will contact you soon.";
+
+document.getElementById("msg").style.color = "lightgreen";
+
+// clear form
+document.getElementById("name").value = "";
+document.getElementById("phone").value = "";
+document.getElementById("service").value = "";
+}
+</script>
+</body>
+</html>
