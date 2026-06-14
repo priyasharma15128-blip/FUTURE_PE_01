@@ -1,4 +1,12 @@
-# FUTURE_PE_01 - Task 1
+## Objective
+To create AI-generated website copy for a local beauty salon using prompt engineering techniques.
+
+## Skills Demonstrated
+- Prompt Engineering
+- AI Content Generation
+- Website Copywriting
+- GitHub Documentation
+- # FUTURE_PE_01 - Task 1
 
 ## Business Chosen
 Glow & Grace Beauty Salon
